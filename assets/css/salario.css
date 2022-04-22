@@ -31,7 +31,7 @@
   color: white;
   font-family: Arial;
   font-weight: bold;
-  font-size: 25px;  
+  font-size: 30px;  
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -62,14 +62,14 @@
   font-size: 35px;
 }
 
-.salario__estado {  
+.salario__pais {  
   grid-column: 1/4;
   display: grid;
   grid-template-columns: repeat(3, 1fr) ;
   margin: 0 auto;
   gap: 10px;
 }
-.salario__estado>h1{
+.salario__pais>h1{
   grid-column: 1/4;
   grid-row: 1/1;
   color: white;
@@ -90,12 +90,18 @@
   border: 1px solid black;
 } */
 
-.salario__pais {
-  background: darkolivegreen;
+.salario__linguagem { 
   grid-column: 1/4;
 }
-.salario__brasil {
-  background: green;
-  grid-column: 4 / 5;
-  grid-row: 2 / 4;
+/* Media salarial por linguagem */
+
+.salario__linguagem>h1{
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 30px; 
+
+  margin: 20px 0 10px 0;
+  text-align: center;
+  
 }

@@ -15,7 +15,7 @@ function drawVisualization() {
     ]);
 
     var options = {       
-      title : 'Os devs tem curso superior?',
+      title : 'Média salárial dos 10 países que mais participaram ',
       vAxis: {title: 'Salário'},
       hAxis: {title: 'Países'},
       seriesType: 'bars',

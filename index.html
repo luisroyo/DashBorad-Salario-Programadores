@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/css/all.css">
 </head>
 
-<body>
+<body class="container">
     <header class="cabecalho">
         <p>DashBoard</p>
         <nav>
@@ -61,7 +61,7 @@
 
         </section>
 
-        <section class="salario__estado">            
+        <section class="salario__pais">            
             <h1>Média salárial por país</h1>
             <!-- <table class="tabela_pais">
                 <tr>
@@ -114,18 +114,15 @@
             
         </section>
 
-        <section class="salario__pais">
-            <h1>Salário por Pais</h1>
-            aqui a ideia é colocar as metricas
+        <section class="salario__linguagem">
+            <h1>Média salárial por linguagem de programação</h1>
+            <div id="chart_div_linguagem" style="width: 1024px; height: 400px;"></div>
         </section>
 
-        <section class="salario__brasil">
-            <h1>salário no Brasil</h1>
-            aqui a ideia é colocar as metricas
-        </section>
+        
     </main>
     <footer class="rodape">
-        <h3>Footer</h3>
+        <div>Footer</div>
     </footer>
 
 
@@ -133,15 +130,15 @@
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./assets/js/grafico-participantes.js"></script>
     <script src="./assets/js/grafico-por-nivel.js"></script>
-    
+    <script src="./assets/js/grafico-salario-linguagem.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>    
     <script>
         google.charts.load('current', { packages: ['corechart'] });
         google.charts.setOnLoadCallback(drawChart);  
-    </script>
-     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </script>  
      <script type="text/javascript">
-       google.charts.load('current', {'packages':['corechart']});
-       google.charts.setOnLoadCallback(drawVisualization);
+       google.charts.load('current', {'packages':['corechart','geochart']});
+       google.charts.setOnLoadCallback(drawVisualization,);
        </script>
 </body>
 

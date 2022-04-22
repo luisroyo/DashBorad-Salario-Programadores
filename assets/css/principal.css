@@ -3,9 +3,10 @@
   grid-template-areas:
     "participantes participantes participantes"
     "salarioNivel salarioNivel salarioNivel "
+    "salarioPais salarioPais salarioPais"
     "salarioEstado salarioEstado salarioEstado "
     "salarioBrasil salarioBrasil salarioBrasil"
-    "salarioPais salarioPais salarioPais"
+    
     ;    
   gap: 15px;
   width: 1024px;
@@ -23,6 +24,6 @@
 .salario__pais{
     grid-area: salarioPais;
 }
-.salario__brasil{
+/* .salario__brasil{
     grid-area: salarioBrasil;
-}
+} */
