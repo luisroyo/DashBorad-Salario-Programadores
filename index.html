@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Interdisciplinar</title>
-
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/plugins/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/all.css">
@@ -32,7 +31,9 @@
                 exclusivamente com programadores brasileiros, participaram da pesquisa 11521 programadores de toda parte
                 do mundo!
             </p>
+            
             <div class="participantes__grafico" id="piechart" style="width: 1024px; height: 300px; "></div>
+            
         </section>
         
         <section class="salario__nivel">
@@ -60,9 +61,57 @@
 
         </section>
 
-        <section class="salario__estado">
-            <h1>salário Por estado</h1>
-            aqui a ideia é colocar as metricas
+        <section class="salario__estado">            
+            <h1>Média salárial por país</h1>
+            <!-- <table class="tabela_pais">
+                <tr>
+                    <td>País</td>
+                    <td>Participantes</td>
+                </tr>
+                <tr>
+                    <td>Portugal</td>
+                    <td>75</td>                    
+                </tr>
+                <tr>
+                    <td>Canadá</td>
+                    <td>18</td>                    
+                </tr>
+                <tr>
+                    <td>Alemanha</td>
+                    <td>14</td>                    
+                </tr>
+                <tr>
+                    <td>Irlanda</td>
+                    <td>09</td>                    
+                </tr>
+                <tr>
+                    <td>Japão</td>
+                    <td>07</td>                    
+                </tr>
+                <tr>
+                    <td>Angola</td>
+                    <td>07</td>                    
+                </tr>
+                <tr>
+                    <td>EUA</td>
+                    <td>06</td>                    
+                </tr>
+                <tr>
+                    <td>Holanda</td>
+                    <td>06</td>                    
+                </tr>
+                <tr>
+                    <td>Inglaterra</td>
+                    <td>05</td>                    
+                </tr>
+                <tr>
+                    <td>Países Baixos</td>
+                    <td>05</td>                    
+                </tr>
+
+            </table> -->
+            <div id="chart_div" style="width: 1024px; height: 400px;"></div>
+            
         </section>
 
         <section class="salario__pais">
@@ -83,10 +132,17 @@
     <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./assets/js/grafico-participantes.js"></script>
+    <script src="./assets/js/grafico-por-nivel.js"></script>
+    
     <script>
         google.charts.load('current', { packages: ['corechart'] });
         google.charts.setOnLoadCallback(drawChart);  
     </script>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+       google.charts.load('current', {'packages':['corechart']});
+       google.charts.setOnLoadCallback(drawVisualization);
+       </script>
 </body>
 
 </html>
