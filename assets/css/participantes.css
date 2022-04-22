@@ -1,0 +1,19 @@
+  
+  .participantes__titulo{
+    margin-top:20px ;
+    margin-bottom: 10px;
+    text-align: center;
+    font: bold 30px justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }  
+  .participantes__info{
+    font: 20px center;    
+    padding: 10px; 
+    margin:10px 50px ;  
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .participantes>div{
+      margin: 0 auto;
+  }

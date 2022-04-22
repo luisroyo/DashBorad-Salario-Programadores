@@ -1,0 +1,22 @@
+.cabecalho {
+  color: white;
+  background-image: linear-gradient(90deg, rgb(50, 31, 94), rgb(18, 3, 41));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  font-size: 20px;
+ 
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  margin-left: 10px;
+}
+.menu li a {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}

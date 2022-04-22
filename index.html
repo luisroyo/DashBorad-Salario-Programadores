@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Interdisciplinar</title>
+
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <p>DashBoard</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="participantes">
+            <p class="participantes__titulo">Pesquisa salárial dos programadores Brasileiros 2022</p>
+            <p class="participantes__info">Os dados utilizados nesta pesquisa foram extraídos do <strong>Canal Fonte
+                    TV</strong>, onde o canal realizou uma pesquisa online entres os meses de Dezembro de 2021 e Março
+                de 2022,
+                exclusivamente com programadores brasileiros, participaram da pesquisa 11521 programadores de toda parte
+                do mundo!
+            </p>
+            <div class="participantes__grafico" id="piechart" style="width: 1024px; height: 300px; "></div>
+        </section>
+        <section class="salario__nivel">
+            <p class="salario__titulo__principal caixa">
+                <h1>Média salárial por nivel</h1>
+            </p>
+            <div class="salario__categoria__estagiario caixa">
+                <p class="salario__categoria__titulo">Salário Estagiário</p>
+                <p class="salario__categoria__info">R$: 1.744,24</p>
+            </div>
+
+            <div class="salario__categoria__junior caixa">
+                <p class="salario__categoria__titulo">Salário Júnior</p>
+                <p class="salario__categoria__info">R$: 3.658,92</p>
+            </div>
+
+            <div class="salario__categoria__pleno caixa">
+                <p class="salario__categoria__titulo">Salário Pleno</p>
+                <p class="salario__categoria__info">R$: 7.387,42</p>
+            </div>
+
+            <div class="salario__categoria__senior caixa  ">
+                <p class="salario__categoria__titulo">Salário Senior</p>
+                <p class="salario__categoria__info">R$: 14.399,46</p>
+            </div>
+
+
+        </section>
+
+        <section class="salario__estado">
+            <h1>salário Por estado</h1>
+            aqui a ideia é colocar as metricas
+        </section>
+
+        <section class="salario__pais">
+            <h1>Salário por Pais</h1>
+            aqui a ideia é colocar as metricas
+        </section>
+
+        <section class="salario__brasil">
+            <h1>salário no Brasil</h1>
+            aqui a ideia é colocar as metricas
+        </section>
+    </main>
+    <footer class="rodape">
+        <h3>Footer</h3>
+    </footer>
+
+
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./assets/js/grafico-participantes.js"></script>
+    <script>
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);  
+    </script>
+</body>
+
+</html>
