@@ -25,7 +25,7 @@ function drawBasic() {
           minValue: 0
         },
         vAxis: {
-          title: 'City'
+          title: 'Linguagem'
         }
       };
 

@@ -1,0 +1,26 @@
+.form_Contato{
+    width: 500px;
+    height: 359px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.form_label{
+    text-align: left;
+    color: black;
+    font-size: smaller;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form_titulo{
+    text-align: left;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+   .form_Contato{
+       max-width: 350px;   
+    }
+}

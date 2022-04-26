@@ -1,19 +1,36 @@
-  
+  .participantes{
+    background: rgb(245, 242, 242);
+  }
   .participantes__titulo{
+    width: 100%;
     margin-top:20px ;
     margin-bottom: 10px;
     text-align: center;
     font: bold 30px justify;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
+   
   }  
   .participantes__info{
+    width: 100%;
+    background:rgb(245, 242, 242);
     font: 20px center;    
     padding: 10px; 
     margin:10px 50px ;  
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
   }
   .participantes>div{
       margin: 0 auto;
   }
+  @media screen and (max-width: 600px) {
+      .participantes {
+       max-width: 500px;   
+       text-align: center;
+      
+    }
+    .participantes__titulo{
+      text-align: center;
+      margin-left: 25px;      
+    }    
+}

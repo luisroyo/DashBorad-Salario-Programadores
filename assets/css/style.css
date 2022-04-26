@@ -1,18 +1,20 @@
 *{
   box-sizing: border-box;
 } 
-body{
-  margin: 0 auto;
+.app{
+  background: rgb(245, 242, 242);
   width: 100%;
-  min-width: 600px;
-  background-color: rgb(46, 8, 133);
+  margin: 0 auto;
   box-sizing: border-box;
 }
-.container{ 
-  display:grid;
-  
-}
+
 a{
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width: 600px){
+  .principal{
+    width:600px;
+    text-align: center;
+  }
 }

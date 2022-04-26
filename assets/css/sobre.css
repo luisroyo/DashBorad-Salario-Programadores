@@ -1,0 +1,16 @@
+.sobre_titulo{
+    text-align: left;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.sobre_text{
+    text-align: left;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small;
+    padding-left: 20px;
+    padding-top: 10px;
+}
