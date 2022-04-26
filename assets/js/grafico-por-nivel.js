@@ -1,3 +1,5 @@
+google.charts.load('current', {'packages':['corechart','geochart']});
+google.charts.setOnLoadCallback(drawVisualization,);
 function drawVisualization() {
     // Some raw data (not necessarily accurate)
     var data = google.visualization.arrayToDataTable([

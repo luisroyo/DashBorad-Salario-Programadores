@@ -136,6 +136,14 @@
   }
 }
 @media screen and (max-width: 600px){
+  .salario__linguagem,
+  .salario__nivel,
+  .salario__pais{
+    max-width: 500px;  
+    text-align: center;
+    margin-left:40px ;
+  
+  }
   .salario__linguagem>h1{
     max-width: 500px;  
     text-align: center;

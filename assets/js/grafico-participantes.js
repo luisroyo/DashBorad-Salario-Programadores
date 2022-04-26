@@ -1,3 +1,5 @@
+google.charts.load('current', { packages: ['corechart'] });
+google.charts.setOnLoadCallback(drawChart); 
 function drawChart() {
 
     var data = google.visualization.arrayToDataTable([
@@ -10,7 +12,9 @@ function drawChart() {
     ]);
 
     var options = {
-      title: 'Dos Participantes'
+      title: 'Dos Participantes',
+      width:'100%',
+      height:'400px'
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
