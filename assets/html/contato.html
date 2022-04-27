@@ -11,33 +11,34 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/all.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  
 </head>
 
 <body class="app">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"> DashBoard</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/assets/html/sobre.html">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="/assets/html/contato.html" tabindex="-1" aria-disabled="true">Contato</a>
-          </li>
-        </ul>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> DashBoard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/assets/html/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/assets/html/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 
 
   <main>
@@ -47,16 +48,16 @@
         <form>
           <div class="form-group">
             <label class="form_label" for="InputName">Nome completo</label>
-            <input type="text" class="form-control" id="InputName" placeholder="Insira seu nome completo">
+            <input type="text" class="form-control" id="InputName" placeholder="Insira seu nome completo" required>
           </div>
           <div class="row form-group">
             <div class="col">
               <label for="email">Email</label>
-              <input type="text" id="email" class="form-control" placeholder="exemplo@exemplo" aria-label="exemplo@exemplo">
+              <input type="text" id="email" class="form-control" placeholder="exemplo@exemplo" aria-label="exemplo@exemplo" required>
             </div>
             <div class="col">
               <label for="telefone">Tel/Cel</label>
-              <input type="text" id="telefone" class="form-control" placeholder="11-11111-1111" aria-label="11-11111-1111">
+              <input type="text" id="telefone" class="form-control" placeholder="11-11111-1111" aria-label="11-11111-1111" required>
             </div>
           </div>
           <div class="form-group">
@@ -105,14 +106,8 @@
         </ul>
         <p class="footer-copyright">© 2022 Copyright - Luis Eduardo / João Sena</p>
     </div>
-    <div class="footer-social">
-        <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="social-icons"><i class="fa fa-youtube"></i></a>
-        <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
-    </div>
 </footer>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 </body>
 

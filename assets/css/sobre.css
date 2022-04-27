@@ -1,3 +1,6 @@
+body{
+   background: rgb(245, 242, 242);
+}
 .sobre_titulo{
     text-align: left;
     color: black;
@@ -5,6 +8,7 @@
     font-size:large;
     padding-left: 20px;
     padding-top: 8px;
+    font-weight: bold;
 }
 .sobre_text{
     text-align: left;
@@ -13,4 +17,31 @@
     font-size:small;
     padding-left: 20px;
     padding-top: 10px;
+}
+
+#sobre{
+     padding: 10px;
+}
+#descricao{
+    padding-top: 3%;
+}
+.descricao{
+    display: grid;
+    margin: 0 auto;
+    gap: 10px;
+}
+.descricao div{
+    margin-top: 10px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    background: white;
+}
+.descricao_aluno h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+.descricao_aluno p{
+    text-align: justify;
 }
