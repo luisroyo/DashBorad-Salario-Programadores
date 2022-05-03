@@ -15,103 +15,75 @@
 </head>
 
 <body class="app ">
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"> DashBoard</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/assets/html/sobre.html">Sobre</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/assets/html/contato.html">Contato</a>
-                </li>
-              </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#"> DashBoard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/assets/html/sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/assets/html/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </nav>
-      </div>
-
-    <div class="container">
-
-        <main class="principal ">
-            <section class="participantes">
-                <p class="participantes__titulo">Pesquisa salárial dos programadores Brasileiros 2022</p>
-                <p class="participantes__info">Os dados utilizados nesta pesquisa foram extraídos do <strong>Canal Fonte
-                        TV</strong>, onde o canal realizou uma pesquisa online entres os meses de Dezembro de 2021 e
-                    Março
-                    de 2022,
-                    exclusivamente com programadores brasileiros, participaram da pesquisa 11521 programadores de toda
-                    parte
-                    do mundo!
-                </p>
-
-                <div id="chart_wrap">
-                    <div class="participantes__grafico" id="piechart" style="width:1024px; height:400px;"></div>
-                </div>
+    </header>
+    <main class="container pt-4">
+        <section class="titulo text-center text-danger">
+            <h1>Média Salárial dos Devs</h1>
+        </section>
+        <section class="participantes text-center row p-3 gap-4 flex flex-wrap">
+            <section class="participantes__total  col col-sm">
+                <div id="piechart" style="height:350px;"></div>
+                <a class="btn btn-dark" href="https://pesquisa.codigofonte.com.br/2022#level" role="button">Mais...</a>
             </section>
-
-            <section class="salario__nivel">
-                <p>Média salárial por nivel</p>
-                <div class="salario__categoria__estagiario caixa">
-                    <p class="salario__categoria__titulo">Salário Estagiário</p>
-                    <p class="salario__categoria__info">R$: 1.744,24</p>
-                </div>
-
-                <div class="salario__categoria__junior caixa">
-                    <p class="salario__categoria__titulo">Salário Júnior</p>
-                    <p class="salario__categoria__info">R$: 3.658,92</p>
-                </div>
-
-                <div class="salario__categoria__pleno caixa">
-                    <p class="salario__categoria__titulo">Salário Pleno</p>
-                    <p class="salario__categoria__info">R$: 7.387,42</p>
-                </div>
-
-                <div class="salario__categoria__senior caixa  ">
-                    <p class="salario__categoria__titulo">Salário Senior</p>
-                    <p class="salario__categoria__info">R$: 14.399,46</p>
-                </div>
+            <section class="participantes__pais col col-sm">
+                <div id="chart_div" style=" height:350px;"></div>
+                <a class="btn btn-dark" href="https://pesquisa.codigofonte.com.br/2022#outside"
+                    role="button">Mais...</a>
             </section>
-
-            <section class="salario__pais">
-                <h1>Média salárial por país</h1>
-              
-                <div id="chart_div" style="width:1024px; height:400px;"></div>
+            <section class="participantes__linguagem col col-sm">
+                <div id="chart_div_linguagem" style=" height:350px;"></div>
+                <a class="btn btn-dark" href="https://pesquisa.codigofonte.com.br/2022#languages"
+                    role="button">Mais...</a>
             </section>
+        </section>
+    </main>
+    
+        <footer id="myFooter" class="bg-primary">
+            <div class="container-fluid ">
+                <ul>
+                    <li><a href="./assets/html/sobre.html">Informações dos Alunos</a></li>
+                    <li><a href="./assets/html/contato.html">Contato</a></li>
+                    <li><a href="https://pesquisa.codigofonte.com.br/2022">Fonte da Pesquisa</a></li>
+                </ul>
+                <p class="footer-copyright text-white">© 2022 Copyright - Luis Eduardo / João Sena</p>
+            </div>
+        </footer>
 
-            <section class="salario__linguagem">
-                <h1>Média salárial por linguagem de programação</h1>
-                <div id="chart_div_linguagem" style="width:1024px; height:400px;"></div>
-            </section>
-        </main>
-    </div>
 
-    <footer id="myFooter">
-        <div class="container">
-            <ul>
-                <li><a href="./assets/html/sobre.html">Informações dos Alunos</a></li>
-                <li><a href="./assets/html/contato.html">Contato</a></li>
-                <!-- <li><a href="https://programadorviking.com.br/">Blog</a></li> -->
-                <li><a href="https://pesquisa.codigofonte.com.br/2022">Fonte da Pesquisa</a></li>
-            </ul>
-            <p class="footer-copyright">© 2022 Copyright - Luis Eduardo / João Sena</p>
-        </div>
-    </footer>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="./assets/js/grafico-participantes.js"></script>
-    <script src="./assets/js/grafico-por-nivel.js"></script>
-    <script src="./assets/js/grafico-salario-linguagem.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="./assets/js/grafico-por-nivel.js"></script>
+        <script src="./assets/js/grafico-por-paisl.js"></script>
+        <script src="./assets/js/grafico-salario-linguagem.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
