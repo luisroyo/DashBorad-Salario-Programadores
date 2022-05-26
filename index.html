@@ -33,6 +33,9 @@
                             <a class="nav-link" href="/assets/html/sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/assets/html/pesquisa_salarial.html">Pesquisa Salárial</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/assets/html/contato.html">Contato</a>
                         </li>
                     </ul>
@@ -42,9 +45,15 @@
     </header>
     <main class="container pt-4">
         <section class="metricas">
-            <div>
-                <h1 class="text-dark ml-2">Média Salárial dos Devs</h1>
+            <div class="row ">
+                <div class="col">
+                    <h1 class="text-dark ml-2">Média Salárial dos Devs</h1>
+                </div>
+                <div class="col pl-5">
+                    <button type="button" onclick="location.href='/assets/html/pesquisa_salarial.html'" class="btn btn-danger">Participar da Pesquisa</button>
+                </div>
             </div>
+           
             <div class="participantes text-center row p-3 gap-4 flex flex-wrap ">
                 <div class="participantes__total col col-sm border rounded  m-1 bg-white">
                     <div id="piechart" style="height:350px;"></div>

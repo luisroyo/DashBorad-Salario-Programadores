@@ -46,7 +46,7 @@
     </header>
     <main>
         <section class="container mb-5">
-            <h1 class="form_titulo">Entre em contato</h1>
+            <h1 class="form_titulo">Pesquisa Salárial</h1>
             <div class="form_Contato">
                 <form>
                     <div class="form-group">
@@ -54,20 +54,26 @@
                         <input type="text" class="form-control" id="InputName" placeholder="Insira seu nome completo"
                             required>
                     </div>
-                    <div class="row form-group">
-                        <div class="col">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" class="form-control" placeholder="exemplo@exemplo"
-                                aria-label="exemplo@exemplo" required>
+                    <div class="row form-group">                       
+                        <div class="form-group col">
+                            <label for="linguagem">Nível Profissional</label>
+                            <select class="form-control" id="linguagem">
+                                <option value="">Estagiário</option>
+                                <option value="">Júnior</option>
+                                <option value="">Pleno</option>
+                                <option value="">Sênior</option>
+                                <option value="">Especialista</option>
+                                <option value="">Outros</option>                                
+                            </select>
                         </div>
                         <div class="col">
-                            <label for="telefone">Tel/Cel</label>
-                            <input type="text" id="telefone" class="form-control" placeholder="11-11111-1111"
-                                aria-label="11-11111-1111" required>
+                            <label for="salario">Salário</label>
+                            <input type="number" id="salario" class="form-control" placeholder="R$ 2000,00"
+                                aria-label="exemplo@exemplo" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="linguagem">Linguagem de preferência</label>
+                        <label for="linguagem">Linguagem que você utiliza profissionalmente</label>
                         <select class="form-control" id="linguagem">
                             <option value="">JavaScript</option>
                             <option value="">Java</option>
@@ -78,23 +84,49 @@
                             <option value="">Outro</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label class="form_label" for="exampleFormControlTextarea1">Mensagem</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="linguagem">Reside</label>
+                            <select class="form-control" id="linguagem">
+                                <option value="">AC</option>
+                                <option value="">AL</option>
+                                <option value="">AP</option>
+                                <option value="">AM</option>
+                                <option value="">BA</option>
+                                <option value="">CE</option>
+                                <option value="">DF</option>
+                                <option value="">ES</option>
+                                <option value="">GO</option>
+                                <option value="">MA</option>
+                                <option value="">MT</option>
+                                <option value="">MS</option>
+                                <option value="">MG</option>
+                                <option value="">PA</option>
+                                <option value="">PB</option>
+                                <option value="">PR</option>
+                                <option value="">PE</option>
+                                <option value="">PI</option>
+                                <option value="">RJ</option>
+                                <option value="">RN</option>
+                                <option value="">RS</option>
+                                <option value="">RO</option>
+                                <option value="">RR</option>
+                                <option value="">SC</option>
+                                <option value="">SP</option>
+                                <option value="">SE</option>
+                                <option value="">TO</option>                           
+                            </select>
+                        </div>  
+                        <div class="form-group col">
+                            <label for="linguagem">Sexo</label>
+                            <select class="form-control" id="linguagem">
+                                <option value="">Feminino</option>
+                                <option value="">Masculino</option>
+                                <option value="">Outros</option>                                
+                            </select>
+                        </div>             
                     </div>
-                    <p class="contato form-group">Preferência por contato</p>
-                    <div class="form-check form-group">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Email
-                        </label>
-                    </div>
-                    <div class="form-check form-group">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Whatsapp
-                        </label>
-                    </div>
+                       
 
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
